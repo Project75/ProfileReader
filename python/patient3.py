@@ -51,16 +51,3 @@ for root1 in root0.findall('{http://hl7.org/fhir}entry'):
 
 Resident_data.close()
 
-for child in root0:
-     print child.tag
-     for child1 in child:
-         print child1.tag
-         for child2 in child1:
-             print child2.tag
-'''
-for neighbor in root.iter('{http://hl7.org/fhir}mapping'):
-     type= neighbor.find('{http://hl7.org/fhir}identity').get('value')
-     if type == 'v2':
-         code= neighbor.find('{http://hl7.org/fhir}map').get('value')
-         print code 
-'''
